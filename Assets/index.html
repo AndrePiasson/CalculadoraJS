@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Top</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+    <div class="main">
+<fieldset> 
+    <form action="" name="Calculator">
+        <input type="text" class="text DisplayColor" name="resultado" disabled>
+        <input type="text" class="textOne mainColor" name="apagar" value="C" onclick="location.reload()">
+        <br>
+        <input type="button" class="num mainColor" name="button9" value="9" onclick="displaynum(button9.value)">
+        <input type="button" class="num mainColor" name="button8" value="8" onclick="displaynum(button8.value)">    
+        <input type="button" class="num  mainColor" name="button7" value="7" onclick="displaynum(button7.value)">
+        <input type="button" class="num SecondColor" name="buttonSoma" value="+" onclick="displaynum(buttonSoma.value)">
+        <br>
+        <input type="button" class="num mainColor" name="button6" value="6" onclick="displaynum(button6.value)">
+        <input type="button" class="num mainColor" name="button5" value="5" onclick="displaynum(button5.value)">
+        <input type="button" class="num mainColor" name="button4" value="4" onclick="displaynum(button4.value)">
+        <input type="button" class="num SecondColor" name="buttonSubtrai" value="-" onclick="displaynum(buttonSubtrai.value)">
+        <br>
+        <input type="button" class="num mainColor" name="button3" value="3" onclick="displaynum(button3.value)">
+        <input type="button" class="num mainColor" name="button2" value="2" onclick="displaynum(button2.value)">
+        <input type="button" class="num mainColor" name="button1" value="1" onclick="displaynum(button1.value)">
+        <input type="button" class="num SecondColor" name="buttonDivide" value="/" onclick="displaynum(buttonDivide.value)">
+        <br>
+        <input type="button" class="num mainColor" name="button0" value="0" onclick="displaynum(button0.value)">
+        <input type="button" class="num SecondColor" name="buttonPonto" value="." onclick="displaynum(buttonPonto.value)">
+        <input type="button" class="num SecondColor" name="buttonIgual" value="=" onclick="resultado.value=eval(resultado.value)">
+        <input type="button" class="num SecondColor" name="buttonMultiplica" value="*" onclick="displaynum(buttonMultiplica.value)">
+        <br>
+    </form>
+</fieldset>
+    </div>
+</body>
+<script src="./js/script.js"></script>
+</html>
